@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "litepdf-annotator"
+version = "0.1.0"
+description = "Headless PDF annotation, highlight and basic edit engine for LitePDF"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "PyMuPDF>=1.24.0",
+    "Pillow>=10.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
